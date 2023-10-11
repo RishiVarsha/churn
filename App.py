@@ -1,8 +1,9 @@
 import streamlit as st
-import joblib
+import pickle
 
 # Load the trained model
-model = joblib.load('/content/drive/MyDrive/telecom churn project/trained_model.pkl')
+with open('trained_model.pkl', 'rb') as model_file:
+    model = pickle.load(model_file)
 
 # Streamlit app title and header
 st.title('Churn Prediction Form')
