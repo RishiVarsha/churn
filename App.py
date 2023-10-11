@@ -2,8 +2,7 @@ import streamlit as st
 import pickle
 
 # Load the trained model
-with open('trained_model.pkl', 'rb') as model_file:
-    model = pickle.load(model_file)
+model=pickle.load(open('trained_model.pkl','rb'))
 
 # Streamlit app title and header
 st.title('Churn Prediction Form')
