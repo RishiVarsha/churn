@@ -1,8 +1,14 @@
 import streamlit as st
 import pickle
 
+# Specify the absolute path to the trained model
+model_path = "trained_model.pkl"
+
 # Load the trained model
-model=pickle.load(open('trained_model.pkl','rb'))
+with open(model_path, 'rb') as model_file:
+    model = pickle.load(model_file)
+
+# Rest of your Streamlit app code
 
 # Streamlit app title and header
 st.title('Churn Prediction Form')
