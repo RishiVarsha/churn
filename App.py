@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 
 # Specify the absolute path to the trained model
-model_path = "trained_model.pkl"
+model_path = "model (1).pkl"
 
 # Load the trained model
 with open(model_path, 'rb') as model_file:
